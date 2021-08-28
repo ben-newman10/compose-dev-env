@@ -51,7 +51,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	log.Print("Listening 8000")
+	log.Print("Listening 8000 - hello world")
 	r := mux.NewRouter()
 	r.HandleFunc("/", blogHandler)
 	log.Fatal(http.ListenAndServe(":8000", handlers.LoggingHandler(os.Stdout, r)))
